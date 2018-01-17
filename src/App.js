@@ -4,6 +4,12 @@ import './App.scss';
 import ReactDOM from 'react-dom';
 import Audio from 'react-audioplayer';
 class App extends Component {
+
+  songObj = {
+    name: "cry for me",
+    src: "./cry.mp3",
+    img: "./poorgrrl1.jpg"
+  }
   render() {
     return (
       <div className="App">
@@ -14,7 +20,9 @@ class App extends Component {
         <p className="App-intro">
           WHY ARE YOU CRYING?
         </p>
+    
       </div>
+
     );
   }
 }
