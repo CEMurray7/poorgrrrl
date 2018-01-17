@@ -2,14 +2,9 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.scss';
 import ReactDOM from 'react-dom';
-import Audio from 'react-audioplayer';
+// import mp3_file from './Airbag.mp3';
 class App extends Component {
 
-  songObj = {
-    name: "cry for me",
-    src: "./cry.mp3",
-    img: "./poorgrrl1.jpg"
-  }
   render() {
     return (
       <div className="App">
@@ -20,7 +15,7 @@ class App extends Component {
         <p className="App-intro">
           WHY ARE YOU CRYING?
         </p>
-    
+
       </div>
 
     );
@@ -34,11 +29,8 @@ class Player extends React.Component {
 				<div className="Header"><div className="Title">Now playing</div></div>
 				<div className="Artwork"></div>
 				<TrackInformation />
-				<Scrubber />
-				<Controls />
-				<Timestamps />
 				<audio>
-					<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/wwy.mp3" />
+					<source src="./Airbag.mp3" />
 				</audio>
 			</div>
 		)
@@ -57,38 +49,38 @@ class TrackInformation extends React.Component {
 	}
 };
 
-class Scrubber extends React.Component {
-	render()  {
-		return (
-			<div className="Scrubber">
-				<div className="Scrubber-Progress"></div>
-			</div>
-		)
-	}
-};
-
-class Controls extends React.Component {
-	render() {
-		return (
-			<div className="Controls">
-				<div className="Button">
-					<i className="fa fa-fw fa-play"></i>
-				</div>
-			</div>
-		)
-	}
-};
-
-class Timestamps extends React.Component {
-	render() {
-		return (
-			<div className="Timestamps">
-				<div className="Time Time--current">0</div>
-				<div className="Time Time--total">192</div>
-			</div>
-		)
-	}
-};
+// class Scrubber extends React.Component {
+// 	render()  {
+// 		return (
+// 			<div className="Scrubber">
+// 				<div className="Scrubber-Progress"></div>
+// 			</div>
+// 		)
+// 	}
+// };
+//
+// class Controls extends React.Component {
+// 	render() {
+// 		return (
+// 			<div className="Controls">
+// 				<div className="Button">
+// 					<i className="fa fa-fw fa-play"></i>
+// 				</div>
+// 			</div>
+// 		)
+// 	}
+// };
+//
+// class Timestamps extends React.Component {
+// 	render() {
+// 		return (
+// 			<div className="Timestamps">
+// 				<div className="Time Time--current">0</div>
+// 				<div className="Time Time--total">192</div>
+// 			</div>
+// 		)
+// 	}
+// };
 
 
 // Render the UI
