@@ -5,6 +5,7 @@ import './index.css';
 // import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
 import Player from './App';
+// import Tracks from './Tracks';
 // ReactDOM.render(<App />, document.getElementById('root'));
 // registerServiceWorker();
 ReactDOM.render(

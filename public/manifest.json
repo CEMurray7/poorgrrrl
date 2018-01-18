@@ -3,13 +3,10 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "poorgrrrl1.jpg",
+      "src": "poorgrrrl2.jpg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
-    {
-      "src": "Airbag.mp3",
-    }
   ],
   "start_url": "./index.html",
   "display": "standalone",
