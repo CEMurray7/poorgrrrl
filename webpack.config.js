@@ -7,6 +7,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   filename: 'index.html',
   inject: 'body'
 })
+
 module.exports = {
   entry: './client/index.js',
   output: {
@@ -18,6 +19,6 @@ module.exports = {
       { test: /\.js@/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
     ]
-  }
+  ,
   plugins: [HtmlWebpackPluginConfig]
 }
